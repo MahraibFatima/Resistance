@@ -4,27 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Resistence 🇵🇸</title>
+    <link rel="icon" href="imgs/outLand.png" type="image/png">
+    <title>Resistance 🇵🇸</title>
 </head>
 <body>
-    <header class= "header">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="imgs/outLand.png">
-                </div>
-                <div class="content">
-                    <ul>
-                        <li> timeline                        </li>
-                        <li>quotes</li>
-                        <li>gallery</li>
-                    </ul>
-                </div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imgs/outLand.png" alt="Resistance Logo">
             </div>
+            <div class="content">
+                <ul>
+                    <li><a href="history.html">timeline</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="poems.html">poems</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-<footer>
-    build with love for 🇵🇸
-</footer>
-</body>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-sidebar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <aside class="mobile-sidebar" id="mobile-sidebar" aria-hidden="true">
+        <nav>
+            <ul>
+                <li><a href="history.html">timeline</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="poems.html">poems</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="screen-overlay" id="screen-overlay"></div>
+    
+    <main>
+        <h1 style="margin-bottom: 2rem;">Palestine must and will be FREE !</h1>
+        <div class="quote-card" id="quote-card">
+            <blockquote id="quote-text">Loading quote...</blockquote>
+            <cite id="quote-author"> hehe</cite>
+            <button class="quote-refresh" id="new-quote-btn">new quote</button>
+        </div>
+    </main>
+    
+    <footer>
+        built with resistance for 🇵🇸
+    </footer>
 
-<script src="script.js"></script>
+    <script src="data/quotes.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
