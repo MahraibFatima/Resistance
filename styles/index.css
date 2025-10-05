@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0; 
     box-sizing: border-box;
-    color: #8C1007;
+    color: #D84040;
     font-family: 'JetBrains Mono', monospace;
 }
 
@@ -13,7 +13,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background: #0a0a0a;
+    background: #1D1616;
     color: #fff;
 }
 
@@ -37,14 +37,14 @@ body {
     height: 50px;
     width: 70px;
     border-radius: 50%;
-    border: 2px solid #8C1007;
+    border: 2px solid #D84040;
 }
 
 .content ul {
     display: flex;
     list-style: none;
     gap: 2rem;
-    color: #8C1007 !important;
+    color: #D84040 !important;
 }
 
 .content li {
@@ -53,11 +53,11 @@ body {
     transition: all 0.3s ease;
     border: 1px solid transparent;
     border-radius: 6px;
-    color: #8C1007 !important;
+    color: #D84040 !important;
 }
 
 .content li:hover {
-    color: #8C1007;
+    color: #D84040;
     /* border-color: #8C1007; */
     transform: translateY(-1px);
 }
@@ -90,7 +90,7 @@ main {
 .hamburger span {
     display: block;
     height: 2px;
-    background: #8C1007;
+    background: #D84040;
     margin: 9px 8px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -132,7 +132,7 @@ main {
 }
 
 .mobile-sidebar nav ul li a {
-    color: #8C1007;
+    color: #D84040;
     text-decoration: none;
     padding: 0.75rem 1rem;
     border-radius: 8px;
@@ -141,7 +141,7 @@ main {
 }
 
 .mobile-sidebar nav ul li a:hover {
-    border-color: #8C1007;
+    border-color: #D84040;
 }
 
 /* Overlay */
@@ -176,7 +176,7 @@ main {
     background: #1a1a1a;
     border: 1px solid #333;
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(255, 215, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(216, 64, 64, 0.12);
     transition: transform 0.3s ease;
 }
 
@@ -195,7 +195,7 @@ main {
     display: block;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: #8C1007;
+    color: #D84040;
     font-style: normal;
     text-align: center;
     font-size: 0.9rem;
@@ -208,23 +208,23 @@ main {
     margin-top: 8rem;
     padding: 0.6rem 1.2rem;
     border-radius: 25px;
-    border: 1px solid #8C1007;
+    border: 1px solid #D84040;
     background: transparent;
-    color: #8C1007;
+    color: #D84040;
     cursor: pointer;
     font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
 .quote-refresh:hover {
-    background: #8C1007;
+    background: #D84040;
     color: #000;
     transform: scale(1.01);
 }
 .quote-author {
     margin-bottom: 3rem;
     padding-bottom: 6rem;
-    border: 1px solid #8C1007;
+    border: 1px solid #D84040;
 }
 .quote-refresh:active {
     transform: scale(0.95);
