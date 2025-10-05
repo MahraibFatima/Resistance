@@ -13,7 +13,7 @@
                     </div>
                     <div class="content">
                         <ul>
-                            <li><a href="history.html">timeline</a></li>
+                            <li><a href="tl.html">timeline</a></li>
                             <li><a href="gallery.html">gallery</a></li>
                             <li><a href="poems.html">poems</a></li>
                         </ul>
@@ -64,7 +64,7 @@
         // Footer
         if (!document.querySelector('footer')) {
             const footer = document.createElement('footer');
-            footer.textContent = 'built with resistance for 🇵🇸';
+            footer.textContent = 'built with love for 🇵🇸';
             document.body.appendChild(footer);
         }
     });
