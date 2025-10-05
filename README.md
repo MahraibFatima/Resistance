@@ -39,19 +39,18 @@ This project documents Palestinian resistance through historical timelines, powe
 
 ```
 resistance/
+├── data/
+│   ├── quotes.json     # Palestinian quotes database.
+│   └── timeline.json   # Historical events data.
+└── imgs/
+   └── images/         # Gallery images and icons.
 ├── index.html          # Home page with quote generator.
 ├── gallery.html        # Image gallery.
 ├── history.html        # Interactive timeline.
 ├── poems.html          # Poetry collection.
-├── styles/
-│   └── style.css       # Main stylesheet.
-├── scripts/
-│   └── script.js       # Core functionality.
-├── data/
-│   ├── quotes.json     # Palestinian quotes database.
-│   └── timeline.json   # Historical events data.
-└── assets/
-    └── images/         # Gallery images and icons.
+├── style.css       # Main stylesheet.
+├── scripts.js       # Core functionality.
+
 ```
 
 
