@@ -37,7 +37,8 @@ This project documents Palestinian resistance through historical timelines, powe
 
 ### Project Structure
 
-```
+> to be updated soon.
+<!-- ```
 resistance/
 ├── data/
 │   ├── quotes.json     # Palestinian quotes database.
@@ -51,7 +52,7 @@ resistance/
 ├── style.css       # Main stylesheet.
 ├── scripts.js       # Core functionality.
 
-```
+``` -->
 
 
 
