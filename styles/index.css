@@ -21,7 +21,7 @@ body {
 .header {
     background: #111;
     border-bottom: 1px solid #333;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
 }
 
 .navbar {
