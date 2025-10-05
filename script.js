@@ -37,6 +37,78 @@
     });
 })();
 
+// Poems
+function closeAll() {
+    document.querySelectorAll('.poem-title').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.poem-content').forEach(c => c.classList.remove('active'));
+}
+
+function renderPoems(data) {
+    const root = document.getElementById('poems-root');
+    if (!root) return;
+    root.innerHTML = '';
+
+    data.forEach(poem => {
+        const section = document.createElement('div');
+        section.className = 'poem-section';
+
+        const title = document.createElement('div');
+        title.className = 'poem-title';
+        title.textContent = poem.title;
+
+        const content = document.createElement('div');
+        content.className = 'poem-content';
+
+        const text = document.createElement('div');
+        text.className = 'poem-text';
+
+        poem.verses.forEach(line => {
+            if (line === '') {
+                const br = document.createElement('br');
+                text.appendChild(br);
+            } else {
+                const p = document.createElement('p');
+                p.className = 'verse';
+                p.textContent = line;
+                text.appendChild(p);
+            }
+        });
+
+        const author = document.createElement('p');
+        author.className = 'author';
+        author.textContent = `- ${poem.author}`;
+        text.appendChild(author);
+
+        content.appendChild(text);
+        section.appendChild(title);
+        section.appendChild(content);
+        root.appendChild(section);
+
+        title.addEventListener('click', () => {
+            const isActive = title.classList.contains('active');
+            closeAll();
+            if (!isActive) {
+                title.classList.add('active');
+                content.classList.add('active');
+            }
+        });
+
+        section.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+        });
+        
+        section.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.poems && Array.isArray(window.poems)) {
+        renderPoems(window.poems);
+    }
+});
+
 
 (function initMobileSidebar() {
     document.addEventListener('DOMContentLoaded', function() {
