@@ -149,3 +149,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 })();
+
+
+
+
+function displayTimeline() {
+    const container = document.getElementById('timeline-events');
+    
+    // Sort events by year
+    const sortedEvents = [...timelineEvents].sort((a, b) => a.year - b.year);
+    
+    sortedEvents.forEach((event, index) => {
+        const timelineItem = document.createElement('div');
+        timelineItem.className = 'timeline-item';
+        
+        timelineItem.innerHTML = `
+            <div class="timeline-year">${event.year}</div>
+            <div class="timeline-content">
+                <div class="timeline-title">${event.title}</div>
+                <div class="timeline-description">${event.description}</div>
+                <div class="timeline-category ${event.category}">${event.category}</div>
+            </div>
+        `;
+        
+        container.appendChild(timelineItem);
+    });
+}
+
+// Display timeline when page loads
+document.addEventListener('DOMContentLoaded', displayTimeline);
