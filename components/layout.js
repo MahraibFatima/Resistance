@@ -44,7 +44,7 @@
             aside.innerHTML = `
                 <nav>
                     <ul>
-                        <li><a href="history.html">timeline</a></li>
+                        <li><a href="tl.html">timeline</a></li>
                         <li><a href="gallery.html">gallery</a></li>
                         <li><a href="poems.html">poems</a></li>
                     </ul>
