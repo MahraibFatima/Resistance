@@ -75,7 +75,6 @@ main {
 /* Mobile hamburger button */
 .hamburger {
     display: none;
-    position: fixed;
     top: 1rem;
     right: 1rem;
     width: 42px;
