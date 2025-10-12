@@ -26,17 +26,6 @@
             document.body.insertBefore(header, document.body.firstChild);
         }
 
-        // Hamburger button
-        if (!document.getElementById('hamburger')) {
-            const hamburger = document.createElement('button');
-            hamburger.className = 'hamburger';
-            hamburger.id = 'hamburger';
-            hamburger.setAttribute('aria-label', 'Open menu');
-            hamburger.setAttribute('aria-expanded', 'false');
-            hamburger.setAttribute('aria-controls', 'mobile-sidebar');
-            hamburger.innerHTML = '<span></span><span></span><span></span>';
-            document.body.insertBefore(hamburger, document.body.children[1] || null);
-        }
 
         // Sidebar
         if (!document.getElementById('mobile-sidebar')) {
