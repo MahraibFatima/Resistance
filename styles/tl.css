@@ -57,7 +57,7 @@
 .timeline-category {
     display: inline-block;
     background: #333;
-    color: #D84040;
+    color: #fff;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -65,7 +65,7 @@
     letter-spacing: 0.5px;
 }
 
-.timeline-category.history { background: #4a1a1a; }
-.timeline-category.political { background: #1a4a1a; }
+.timeline-category.history { background: #213448; }
+.timeline-category.political { background-color: #1a4a1a; }
 .timeline-category.resistance { background: #4a1a1a; }
-.timeline-category.culture { background: #1a1a4a; }
+.timeline-category.culture { background: #B6771D }

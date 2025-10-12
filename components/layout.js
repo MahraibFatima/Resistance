@@ -18,6 +18,9 @@
                             <li><a href="poems.html">poems</a></li>
                         </ul>
                     </div>
+                    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-sidebar">
+                        <span></span><span></span><span></span>
+                    </button>
                 </nav>
             `;
             document.body.insertBefore(header, document.body.firstChild);
