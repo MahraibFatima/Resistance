@@ -12,7 +12,33 @@
     
     <main>
         <h1 style="margin-bottom: 2rem;">Updating soon!</h1>
+
     </main>
-    
+<script>
+    var imgGalleryArr= [
+        "imgs/gallery/1948WasTheft_notTheBIRTH.jpeg",
+        "imgs/gallery/ALLAH_isAboveMe.jpeg",
+        "imgs/gallery/iamTheFutureOfGaza.jpeg",
+        "imgs/gallery/WeAre_ONE_underOneFlag.jpeg",
+        "imgs/gallery/WeAreTheSYmbolOfHope.jpeg",
+        "imgs/gallery/WeWereJust_TITLE_wholeStoryIsLeftBehind.jpeg",
+        "imgs/gallery/WeWillStandTall.jpeg",
+        "imgs/gallery/whatWillYouDo.jpeg",
+        "imgs/gallery/will_If_i'mYourChildUnderTheRubble.jpeg"
+    ];
+    function imgGallery(src){
+    var img= document.createElement("img");
+    img.src= src;
+    img.style.width="60%";
+    img.style.display="block";
+    img.style.margin="0 auto";
+    img.style.marginBottom="2rem";
+
+    document.body.appendChild(img);
+    }
+    for(var i=0; i<imgGalleryArr.length; i++){
+        imgGallery(imgGalleryArr[i]);
+    }
+</script>  
 </body>
 </html>
